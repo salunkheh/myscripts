@@ -1,0 +1,7 @@
+1. Install gradle
+cd /tmp/
+ wget https://services.gradle.org/distributions/gradle-5.6-bin.zip
+ sudo mkdir /opt/gradle
+ sudo chown $(id -u):$(id -g) /opt/gradle
+ unzip -d /opt/gradle gradle-5.6-bin.zip
+*/

@@ -40,7 +40,6 @@ jobs:
         with:
             java-version: '11'
             distribution: 'adopt'
-            cache: maven
       - name: Install Jetty 9
         run: |
           sudo apt-get update

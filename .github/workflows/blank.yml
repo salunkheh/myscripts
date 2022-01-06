@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Install Jetty 9
+        run: |
+          sudo apt-get update
+          sudo apt install jetty9
+      - name: To see Jetty 
+        run: |
+          apt show jetty
+      

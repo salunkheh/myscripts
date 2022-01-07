@@ -44,5 +44,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install jetty9
+          sudo systemctl status jetty9
+          curl http://localhost:8080
       
       

@@ -43,7 +43,6 @@ jobs:
       - name: Install Jetty 9
         run: |
           google-chrome --version
-          chromedriver --version
           sudo apt-get update
           sudo apt install jetty9
           sudo systemctl status jetty9

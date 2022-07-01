@@ -15,9 +15,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  
-  callworkfl:
-    uses: salunkheh/myGradleproject/.github/workflows/gradle.yml@main
   # This workflow contains a single job called "build"
   build:
 
@@ -54,7 +51,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      
+                    
+      - name: Run a command on mygradle project
+        run: |
+          ls -al $GITHUB_WORKSPACE/myGradleproject/
+            
       - name: Install Jetty 9
         run: |
           google-chrome --version

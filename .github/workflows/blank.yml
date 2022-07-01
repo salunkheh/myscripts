@@ -28,7 +28,18 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-
+        
+      - name: Checkout myGradleproject
+        uses: actions/checkout@v3
+        with:
+          repository: salunkheh/myGradleproject
+          path: myGradleproject        
+            
+      - uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: current
+      - run: gradle clean test -i
+          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |

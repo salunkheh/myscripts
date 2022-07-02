@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: salunkheh/myGradleproject
-          path: myGradleproject        
+          path: .       
             
       - uses: gradle/gradle-build-action@v2
         with:
@@ -54,7 +54,7 @@ jobs:
                     
       - name: Run a command on mygradle project
         run: |
-          ls -al $GITHUB_WORKSPACE/myGradleproject/
+          ls -al $GITHUB_WORKSPACE/
             
       - name: Install Jetty 9
         run: |

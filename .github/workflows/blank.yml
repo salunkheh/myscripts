@@ -46,6 +46,8 @@ jobs:
         with:
           gradle-version: current
           
+      - run: gradle clean test -i
+          
       # Runs a set of commands using the runners shell1
       - name: Run a multi-line script
         run: |
@@ -62,7 +64,6 @@ jobs:
           sudo apt-get update
           sudo apt install jetty9
           sudo systemctl status jetty9
-          curl http://localhost:8080
           sleep 20s
       
       

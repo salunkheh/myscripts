@@ -46,6 +46,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: salunkheh/demo_dev_repo
+          token: ${{ secrets.GH_PAT }} 
           path: demo_dev_repo
                         
       - name: Run a command on demo_dev_repo

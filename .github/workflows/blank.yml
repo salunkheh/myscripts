@@ -45,9 +45,9 @@ jobs:
       - name: Checkout  demo_dev_repo
         uses: actions/checkout@v3
         with:
-          repository: salunkheh/ demo_dev_repo
+          repository: salunkheh/demo_dev_repo
           token: ${{ secrets.G_ACCESS_TOKEN }}
-          path:  demo_dev_repo      
+          path: demo_dev_repo      
           
       - uses: gradle/gradle-build-action@v2
         with:
